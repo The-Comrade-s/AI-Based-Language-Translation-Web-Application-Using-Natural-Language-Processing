@@ -1,0 +1,616 @@
+2026-08-04 09:14:01 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-04 09:14:02 | INFO     | alt.auth.service | New user registered: faizol@example.com
+2026-08-04 09:14:26 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-04 09:14:26 | INFO     | alt.auth.service | New user registered: faizol@example.com
+2026-08-04 09:14:26 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 85, in register_user
+    raise ValidationError(
+utils.exceptions.ValidationError: Email already registered: faizol@example.com
+2026-08-04 09:14:27 | INFO     | alt.auth.service | User logged in: faizol@example.com
+2026-08-04 09:14:27 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 171, in login_user
+    raise AuthenticationError("Incorrect password.", user_message="Invalid email or password.")
+utils.exceptions.AuthenticationError: Incorrect password.
+2026-08-04 09:14:28 | INFO     | alt.auth.service | Password changed for user id=1
+2026-08-04 09:14:28 | INFO     | alt.auth.service | User logged in: faizol@example.com
+2026-08-04 09:14:28 | INFO     | alt.auth.service | Password reset token issued for: faizol@example.com
+2026-08-04 09:14:28 | INFO     | alt.auth.service | Password reset completed for user id=1
+2026-08-04 09:14:29 | INFO     | alt.auth.service | User logged in: faizol@example.com
+2026-08-04 09:14:29 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 171, in login_user
+    raise AuthenticationError("Incorrect password.", user_message="Invalid email or password.")
+utils.exceptions.AuthenticationError: Incorrect password.
+2026-08-04 09:14:29 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 171, in login_user
+    raise AuthenticationError("Incorrect password.", user_message="Invalid email or password.")
+utils.exceptions.AuthenticationError: Incorrect password.
+2026-08-04 09:14:29 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 171, in login_user
+    raise AuthenticationError("Incorrect password.", user_message="Invalid email or password.")
+utils.exceptions.AuthenticationError: Incorrect password.
+2026-08-04 09:14:30 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 171, in login_user
+    raise AuthenticationError("Incorrect password.", user_message="Invalid email or password.")
+utils.exceptions.AuthenticationError: Incorrect password.
+2026-08-04 09:14:30 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 171, in login_user
+    raise AuthenticationError("Incorrect password.", user_message="Invalid email or password.")
+utils.exceptions.AuthenticationError: Incorrect password.
+2026-08-04 09:14:30 | INFO     | alt.auth.service | User logged in: faizol@example.com
+2026-08-04 09:14:52 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-04 09:14:53 | INFO     | alt.auth.service | New user registered: faizol@example.com
+2026-08-04 09:14:53 | INFO     | alt.auth.service | User logged in: faizol@example.com
+2026-08-04 09:14:54 | WARNING  | alt.auth.service | Account locked after repeated failures: faizol@example.com
+2026-08-04 09:19:24 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-04 09:19:25 | INFO     | alt.auth.service | New user registered: test@example.com
+2026-08-04 09:19:25 | INFO     | alt.services.translation_service | Translation completed: en->yo in 0.000s via nllb-200
+2026-08-04 09:19:33 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-04 09:19:33 | INFO     | alt.services.translation_service | Translation completed: en->ha in 0.001s via marian-mt
+2026-08-04 09:19:33 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-04 09:19:33 | ERROR    | alt.services.translation_service | Fallback model also failed (en -> ha): also boom
+2026-08-04 09:21:34 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-04 09:21:34 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-04 09:21:34 | INFO     | alt.services.history_service | Toggled favorite: record_id=3 user_id=1 -> True
+2026-08-04 09:21:34 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/history_service.py", line 83, in toggle_favorite
+    raise ValidationError(
+utils.exceptions.ValidationError: Record 3 not found for user 999999
+2026-08-04 09:21:34 | INFO     | alt.services.history_service | Deleted history record_id=3 for user_id=1
+2026-08-04 09:21:34 | INFO     | alt.services.history_service | Cleared all history for user_id=1 (2 records)
+2026-08-04 14:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-04 14:30:36 | INFO     | alt.auth.service | New user registered: doc@example.com
+2026-08-04 14:30:36 | INFO     | alt.services.translation_service | Translation completed: en->fr in 0.000s via nllb-200
+2026-08-04 14:30:36 | INFO     | alt.services.document_service | Document translated: sample.txt (1 chunks) in 0.00s
+2026-08-04 14:30:52 | INFO     | alt.services.translation_service | Translation completed: en->fr in 0.000s via nllb-200
+2026-08-04 14:30:52 | INFO     | alt.services.ocr_service | Image translated: test.png in 0.11s
+2026-08-05 05:20:46 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-05 05:20:46 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:20:46 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:20:46 | INFO     | alt.services.admin_service | User 1 role changed to admin by admin action
+2026-08-05 05:20:46 | INFO     | alt.services.admin_service | User 2 set is_active=False by admin action
+2026-08-05 05:20:46 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/admin_service.py", line 54, in set_user_active
+    raise ValidationError(f"User {target_user_id} not found", user_message="User not found.")
+utils.exceptions.ValidationError: User 999999 not found
+2026-08-05 05:20:46 | WARNING  | alt.services.admin_service | User 2 deleted by admin action
+2026-08-05 05:22:14 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-05 05:22:14 | INFO     | alt.auth.service | New user registered: settings@example.com
+2026-08-05 05:22:14 | INFO     | alt.services.settings_service | Settings updated for user_id=1
+2026-08-05 05:22:14 | INFO     | alt.services.cache_service | Cleared 1 item(s) from /home/claude/ALT/data/temp
+2026-08-05 05:22:53 | INFO     | alt.database.base | Database initialized at sqlite:////home/claude/ALT/database.db
+2026-08-05 05:22:53 | INFO     | alt.auth.service | New user registered: backup@example.com
+2026-08-05 05:22:53 | INFO     | alt.services.backup_service | Database backup created: /home/claude/ALT/backups/alt_backup_20260805_052253_test.db
+2026-08-05 05:22:54 | INFO     | alt.auth.service | New user registered: second@example.com
+2026-08-05 05:22:54 | INFO     | alt.services.backup_service | Database backup created: /home/claude/ALT/backups/alt_backup_20260805_052254_pre_restore.db
+2026-08-05 05:22:54 | WARNING  | alt.services.backup_service | Database restored from backup: alt_backup_20260805_052253_test.db
+2026-08-05 05:25:18 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_system_overview0/test_alt.db
+2026-08-05 05:25:18 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:25:19 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:25:19 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_search_users0/test_alt.db
+2026-08-05 05:25:19 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:25:19 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:25:19 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_promote_and_demote0/test_alt.db
+2026-08-05 05:25:20 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:25:20 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:25:20 | INFO     | alt.services.admin_service | User 1 role changed to admin by admin action
+2026-08-05 05:25:20 | INFO     | alt.services.admin_service | User 1 role changed to user by admin action
+2026-08-05 05:25:20 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_invalid_role_rejected0/test_alt.db
+2026-08-05 05:25:20 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:25:20 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:25:20 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_disable_enable_user0/test_alt.db
+2026-08-05 05:25:21 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:25:21 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:25:21 | INFO     | alt.services.admin_service | User 2 set is_active=False by admin action
+2026-08-05 05:25:21 | INFO     | alt.services.admin_service | User 2 set is_active=True by admin action
+2026-08-05 05:25:21 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_nonexistent_user_rejected0/test_alt.db
+2026-08-05 05:25:21 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/admin_service.py", line 54, in set_user_active
+    raise ValidationError(f"User {target_user_id} not found", user_message="User not found.")
+utils.exceptions.ValidationError: User 999999 not found
+2026-08-05 05:25:21 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_delete_user0/test_alt.db
+2026-08-05 05:25:21 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:25:22 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:25:22 | WARNING  | alt.services.admin_service | User 2 deleted by admin action
+2026-08-05 05:25:22 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_register_and_login0/test_alt.db
+2026-08-05 05:25:22 | INFO     | alt.auth.service | New user registered: test@example.com
+2026-08-05 05:25:22 | INFO     | alt.auth.service | User logged in: test@example.com
+2026-08-05 05:25:22 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_duplicate_email_rejected0/test_alt.db
+2026-08-05 05:25:23 | INFO     | alt.auth.service | New user registered: dup@example.com
+2026-08-05 05:25:23 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 85, in register_user
+    raise ValidationError(
+utils.exceptions.ValidationError: Email already registered: dup@example.com
+2026-08-05 05:25:23 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_weak_password_rejected0/test_alt.db
+2026-08-05 05:25:23 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_password_mismatch_rejecte0/test_alt.db
+2026-08-05 05:25:23 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_wrong_password_rejected0/test_alt.db
+2026-08-05 05:25:23 | INFO     | alt.auth.service | New user registered: wrongpw@example.com
+2026-08-05 05:25:23 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_account_lockout_after_rep0/test_alt.db
+2026-08-05 05:25:23 | INFO     | alt.auth.service | New user registered: lockout@example.com
+2026-08-05 05:25:25 | WARNING  | alt.auth.service | Account locked after repeated failures: lockout@example.com
+2026-08-05 05:25:25 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_change_password_flow0/test_alt.db
+2026-08-05 05:25:25 | INFO     | alt.auth.service | New user registered: changer@example.com
+2026-08-05 05:25:26 | INFO     | alt.auth.service | Password changed for user id=1
+2026-08-05 05:25:26 | INFO     | alt.auth.service | User logged in: changer@example.com
+2026-08-05 05:25:26 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_password_reset_flow0/test_alt.db
+2026-08-05 05:25:27 | INFO     | alt.auth.service | New user registered: resetter@example.com
+2026-08-05 05:25:27 | INFO     | alt.auth.service | Password reset token issued for: resetter@example.com
+2026-08-05 05:25:27 | INFO     | alt.auth.service | Password reset completed for user id=1
+2026-08-05 05:25:27 | INFO     | alt.auth.service | User logged in: resetter@example.com
+2026-08-05 05:25:27 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_password_reset_unknown_em0/test_alt.db
+2026-08-05 05:25:27 | INFO     | alt.auth.service | Password reset requested for unknown email: nobody@example.com
+2026-08-05 05:25:27 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_reset_with_invalid_token_0/test_alt.db
+2026-08-05 05:25:27 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 260, in reset_password
+    raise ValidationError(
+utils.exceptions.ValidationError: Invalid or expired reset token.
+2026-08-05 05:25:27 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_list_and_count0/test_alt.db
+2026-08-05 05:25:28 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:28 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_favorites_filter0/test_alt.db
+2026-08-05 05:25:28 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:28 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_search0/test_alt.db
+2026-08-05 05:25:28 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:28 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_toggle_favorite_cross_use0/test_alt.db
+2026-08-05 05:25:29 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:29 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/history_service.py", line 83, in toggle_favorite
+    raise ValidationError(
+utils.exceptions.ValidationError: Record 2 not found for user 999999
+2026-08-05 05:25:29 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_delete_and_clear0/test_alt.db
+2026-08-05 05:25:29 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:29 | INFO     | alt.services.history_service | Deleted history record_id=2 for user_id=1
+2026-08-05 05:25:29 | INFO     | alt.services.history_service | Cleared all history for user_id=1 (1 records)
+2026-08-05 05:25:29 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_statistics0/test_alt.db
+2026-08-05 05:25:29 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:29 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_exports_produce_nonempty_0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_registry_has_50_plus_lang0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_mandatory_nigerian_langua0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_get_language_unknown_code0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_is_supported0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_to_nllb_code0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_language_choices_sorted_a0/test_alt.db
+2026-08-05 05:25:30 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_password_hash_roundtrip0/test_alt.db
+2026-08-05 05:25:31 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_password_hash_is_salted_d0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_password_strength_rules0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_email_normalization_and_v0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_sanitize_text_input_strip0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_file_validation_rejects_b0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_file_validation_rejects_o0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_file_validation_rejects_e0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_sanitize_filename_strips_0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_rate_limiter_blocks_after0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_rate_limiter_keys_are_ind0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_empty_text_rejected0/test_alt.db
+2026-08-05 05:25:32 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:25:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_unsupported_language_reje0/test_alt.db
+2026-08-05 05:25:33 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:25:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_identical_languages_rejec0/test_alt.db
+2026-08-05 05:25:33 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:25:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_successful_translation_sa0/test_alt.db
+2026-08-05 05:25:33 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:25:33 | INFO     | alt.services.translation_service | Translation completed: en->yo in 0.000s via nllb-200
+2026-08-05 05:25:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_fallback_used_when_primar0/test_alt.db
+2026-08-05 05:25:34 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:25:34 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:25:34 | INFO     | alt.services.translation_service | Translation completed: en->ha in 0.000s via marian-mt
+2026-08-05 05:25:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-1/test_both_models_failing_raise0/test_alt.db
+2026-08-05 05:25:34 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:25:34 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:25:34 | ERROR    | alt.services.translation_service | Fallback model also failed (en -> ha): also boom
+2026-08-05 05:26:04 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_system_overview0/test_alt.db
+2026-08-05 05:26:04 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:26:05 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:26:05 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_search_users0/test_alt.db
+2026-08-05 05:26:05 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:26:05 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:26:05 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_promote_and_demote0/test_alt.db
+2026-08-05 05:26:05 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:26:06 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:26:06 | INFO     | alt.services.admin_service | User 1 role changed to admin by admin action
+2026-08-05 05:26:06 | INFO     | alt.services.admin_service | User 1 role changed to user by admin action
+2026-08-05 05:26:06 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_invalid_role_rejected0/test_alt.db
+2026-08-05 05:26:06 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:26:06 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:26:06 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_disable_enable_user0/test_alt.db
+2026-08-05 05:26:07 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:26:07 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:26:07 | INFO     | alt.services.admin_service | User 2 set is_active=False by admin action
+2026-08-05 05:26:07 | INFO     | alt.services.admin_service | User 2 set is_active=True by admin action
+2026-08-05 05:26:07 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_nonexistent_user_rejected0/test_alt.db
+2026-08-05 05:26:07 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/admin_service.py", line 54, in set_user_active
+    raise ValidationError(f"User {target_user_id} not found", user_message="User not found.")
+utils.exceptions.ValidationError: User 999999 not found
+2026-08-05 05:26:07 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_delete_user0/test_alt.db
+2026-08-05 05:26:07 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:26:08 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:26:08 | WARNING  | alt.services.admin_service | User 2 deleted by admin action
+2026-08-05 05:26:08 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_register_and_login0/test_alt.db
+2026-08-05 05:26:08 | INFO     | alt.auth.service | New user registered: test@example.com
+2026-08-05 05:26:08 | INFO     | alt.auth.service | User logged in: test@example.com
+2026-08-05 05:26:08 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_duplicate_email_rejected0/test_alt.db
+2026-08-05 05:26:08 | INFO     | alt.auth.service | New user registered: dup@example.com
+2026-08-05 05:26:08 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 85, in register_user
+    raise ValidationError(
+utils.exceptions.ValidationError: Email already registered: dup@example.com
+2026-08-05 05:26:08 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_weak_password_rejected0/test_alt.db
+2026-08-05 05:26:08 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_password_mismatch_rejecte0/test_alt.db
+2026-08-05 05:26:08 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_wrong_password_rejected0/test_alt.db
+2026-08-05 05:26:09 | INFO     | alt.auth.service | New user registered: wrongpw@example.com
+2026-08-05 05:26:09 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_account_lockout_after_rep0/test_alt.db
+2026-08-05 05:26:09 | INFO     | alt.auth.service | New user registered: lockout@example.com
+2026-08-05 05:26:11 | WARNING  | alt.auth.service | Account locked after repeated failures: lockout@example.com
+2026-08-05 05:26:11 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_change_password_flow0/test_alt.db
+2026-08-05 05:26:11 | INFO     | alt.auth.service | New user registered: changer@example.com
+2026-08-05 05:26:12 | INFO     | alt.auth.service | Password changed for user id=1
+2026-08-05 05:26:12 | INFO     | alt.auth.service | User logged in: changer@example.com
+2026-08-05 05:26:12 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_password_reset_flow0/test_alt.db
+2026-08-05 05:26:12 | INFO     | alt.auth.service | New user registered: resetter@example.com
+2026-08-05 05:26:12 | INFO     | alt.auth.service | Password reset token issued for: resetter@example.com
+2026-08-05 05:26:13 | INFO     | alt.auth.service | Password reset completed for user id=1
+2026-08-05 05:26:13 | INFO     | alt.auth.service | User logged in: resetter@example.com
+2026-08-05 05:26:13 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_password_reset_unknown_em0/test_alt.db
+2026-08-05 05:26:13 | INFO     | alt.auth.service | Password reset requested for unknown email: nobody@example.com
+2026-08-05 05:26:13 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_reset_with_invalid_token_0/test_alt.db
+2026-08-05 05:26:13 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 260, in reset_password
+    raise ValidationError(
+utils.exceptions.ValidationError: Invalid or expired reset token.
+2026-08-05 05:26:13 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_list_and_count0/test_alt.db
+2026-08-05 05:26:13 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:13 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_favorites_filter0/test_alt.db
+2026-08-05 05:26:14 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:14 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_search0/test_alt.db
+2026-08-05 05:26:14 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:14 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_toggle_favorite_cross_use0/test_alt.db
+2026-08-05 05:26:14 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:14 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/history_service.py", line 83, in toggle_favorite
+    raise ValidationError(
+utils.exceptions.ValidationError: Record 2 not found for user 999999
+2026-08-05 05:26:14 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_delete_and_clear0/test_alt.db
+2026-08-05 05:26:15 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:15 | INFO     | alt.services.history_service | Deleted history record_id=2 for user_id=1
+2026-08-05 05:26:15 | INFO     | alt.services.history_service | Cleared all history for user_id=1 (1 records)
+2026-08-05 05:26:15 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_statistics0/test_alt.db
+2026-08-05 05:26:15 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:15 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_exports_produce_nonempty_0/test_alt.db
+2026-08-05 05:26:15 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_registry_has_50_plus_lang0/test_alt.db
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_mandatory_nigerian_langua0/test_alt.db
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_get_language_unknown_code0/test_alt.db
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_is_supported0/test_alt.db
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_to_nllb_code0/test_alt.db
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_language_choices_sorted_a0/test_alt.db
+2026-08-05 05:26:16 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_password_hash_roundtrip0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_password_hash_is_salted_d0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_password_strength_rules0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_email_normalization_and_v0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_sanitize_text_input_strip0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_file_validation_rejects_b0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_file_validation_rejects_o0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_file_validation_rejects_e0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_sanitize_filename_strips_0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_rate_limiter_blocks_after0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_rate_limiter_keys_are_ind0/test_alt.db
+2026-08-05 05:26:17 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_empty_text_rejected0/test_alt.db
+2026-08-05 05:26:18 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:26:18 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_unsupported_language_reje0/test_alt.db
+2026-08-05 05:26:18 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:26:18 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_identical_languages_rejec0/test_alt.db
+2026-08-05 05:26:18 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:26:18 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_successful_translation_sa0/test_alt.db
+2026-08-05 05:26:19 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:26:19 | INFO     | alt.services.translation_service | Translation completed: en->yo in 0.000s via nllb-200
+2026-08-05 05:26:19 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_fallback_used_when_primar0/test_alt.db
+2026-08-05 05:26:19 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:26:19 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:26:19 | INFO     | alt.services.translation_service | Translation completed: en->ha in 0.000s via marian-mt
+2026-08-05 05:26:19 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-2/test_both_models_failing_raise0/test_alt.db
+2026-08-05 05:26:19 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:26:19 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:26:19 | ERROR    | alt.services.translation_service | Fallback model also failed (en -> ha): also boom
+2026-08-05 05:29:31 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_system_overview0/test_alt.db
+2026-08-05 05:29:31 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:29:31 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:29:31 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_search_users0/test_alt.db
+2026-08-05 05:29:32 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:29:32 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:29:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_promote_and_demote0/test_alt.db
+2026-08-05 05:29:32 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:29:33 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:29:33 | INFO     | alt.services.admin_service | User 1 role changed to admin by admin action
+2026-08-05 05:29:33 | INFO     | alt.services.admin_service | User 1 role changed to user by admin action
+2026-08-05 05:29:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_invalid_role_rejected0/test_alt.db
+2026-08-05 05:29:33 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:29:33 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:29:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_disable_enable_user0/test_alt.db
+2026-08-05 05:29:34 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:29:34 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:29:34 | INFO     | alt.services.admin_service | User 2 set is_active=False by admin action
+2026-08-05 05:29:34 | INFO     | alt.services.admin_service | User 2 set is_active=True by admin action
+2026-08-05 05:29:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_nonexistent_user_rejected0/test_alt.db
+2026-08-05 05:29:34 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/admin_service.py", line 54, in set_user_active
+    raise ValidationError(f"User {target_user_id} not found", user_message="User not found.")
+utils.exceptions.ValidationError: User 999999 not found
+2026-08-05 05:29:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_delete_user0/test_alt.db
+2026-08-05 05:29:34 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:29:35 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:29:35 | WARNING  | alt.services.admin_service | User 2 deleted by admin action
+2026-08-05 05:29:35 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_register_and_login0/test_alt.db
+2026-08-05 05:29:35 | INFO     | alt.auth.service | New user registered: test@example.com
+2026-08-05 05:29:35 | INFO     | alt.auth.service | User logged in: test@example.com
+2026-08-05 05:29:35 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_duplicate_email_rejected0/test_alt.db
+2026-08-05 05:29:35 | INFO     | alt.auth.service | New user registered: dup@example.com
+2026-08-05 05:29:35 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 85, in register_user
+    raise ValidationError(
+utils.exceptions.ValidationError: Email already registered: dup@example.com
+2026-08-05 05:29:35 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_weak_password_rejected0/test_alt.db
+2026-08-05 05:29:35 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_password_mismatch_rejecte0/test_alt.db
+2026-08-05 05:29:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_wrong_password_rejected0/test_alt.db
+2026-08-05 05:29:36 | INFO     | alt.auth.service | New user registered: wrongpw@example.com
+2026-08-05 05:29:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_account_lockout_after_rep0/test_alt.db
+2026-08-05 05:29:36 | INFO     | alt.auth.service | New user registered: lockout@example.com
+2026-08-05 05:29:38 | WARNING  | alt.auth.service | Account locked after repeated failures: lockout@example.com
+2026-08-05 05:29:38 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_change_password_flow0/test_alt.db
+2026-08-05 05:29:38 | INFO     | alt.auth.service | New user registered: changer@example.com
+2026-08-05 05:29:39 | INFO     | alt.auth.service | Password changed for user id=1
+2026-08-05 05:29:39 | INFO     | alt.auth.service | User logged in: changer@example.com
+2026-08-05 05:29:39 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_password_reset_flow0/test_alt.db
+2026-08-05 05:29:40 | INFO     | alt.auth.service | New user registered: resetter@example.com
+2026-08-05 05:29:40 | INFO     | alt.auth.service | Password reset token issued for: resetter@example.com
+2026-08-05 05:29:40 | INFO     | alt.auth.service | Password reset completed for user id=1
+2026-08-05 05:29:40 | INFO     | alt.auth.service | User logged in: resetter@example.com
+2026-08-05 05:29:40 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_password_reset_unknown_em0/test_alt.db
+2026-08-05 05:29:40 | INFO     | alt.auth.service | Password reset requested for unknown email: nobody@example.com
+2026-08-05 05:29:40 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_reset_with_invalid_token_0/test_alt.db
+2026-08-05 05:29:40 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 260, in reset_password
+    raise ValidationError(
+utils.exceptions.ValidationError: Invalid or expired reset token.
+2026-08-05 05:29:40 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_list_and_count0/test_alt.db
+2026-08-05 05:29:40 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:40 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_favorites_filter0/test_alt.db
+2026-08-05 05:29:41 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:41 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_search0/test_alt.db
+2026-08-05 05:29:41 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:41 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_toggle_favorite_cross_use0/test_alt.db
+2026-08-05 05:29:41 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:41 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/history_service.py", line 83, in toggle_favorite
+    raise ValidationError(
+utils.exceptions.ValidationError: Record 2 not found for user 999999
+2026-08-05 05:29:41 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_delete_and_clear0/test_alt.db
+2026-08-05 05:29:42 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:42 | INFO     | alt.services.history_service | Deleted history record_id=2 for user_id=1
+2026-08-05 05:29:42 | INFO     | alt.services.history_service | Cleared all history for user_id=1 (1 records)
+2026-08-05 05:29:42 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_statistics0/test_alt.db
+2026-08-05 05:29:42 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:42 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_exports_produce_nonempty_0/test_alt.db
+2026-08-05 05:29:42 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_registry_has_50_plus_lang0/test_alt.db
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_mandatory_nigerian_langua0/test_alt.db
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_get_language_unknown_code0/test_alt.db
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_is_supported0/test_alt.db
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_to_nllb_code0/test_alt.db
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_language_choices_sorted_a0/test_alt.db
+2026-08-05 05:29:43 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_password_hash_roundtrip0/test_alt.db
+2026-08-05 05:29:44 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_password_hash_is_salted_d0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_password_strength_rules0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_email_normalization_and_v0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_sanitize_text_input_strip0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_file_validation_rejects_b0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_file_validation_rejects_o0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_file_validation_rejects_e0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_sanitize_filename_strips_0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_rate_limiter_blocks_after0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_rate_limiter_keys_are_ind0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_empty_text_rejected0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_unsupported_language_reje0/test_alt.db
+2026-08-05 05:29:45 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:29:45 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_identical_languages_rejec0/test_alt.db
+2026-08-05 05:29:46 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:29:46 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_successful_translation_sa0/test_alt.db
+2026-08-05 05:29:46 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:29:46 | INFO     | alt.services.translation_service | Translation completed: en->yo in 0.000s via nllb-200
+2026-08-05 05:29:46 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_fallback_used_when_primar0/test_alt.db
+2026-08-05 05:29:46 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:29:46 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:29:46 | INFO     | alt.services.translation_service | Translation completed: en->ha in 0.000s via marian-mt
+2026-08-05 05:29:46 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-3/test_both_models_failing_raise0/test_alt.db
+2026-08-05 05:29:47 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:29:47 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:29:47 | ERROR    | alt.services.translation_service | Fallback model also failed (en -> ha): also boom
+2026-08-05 05:30:21 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_system_overview0/test_alt.db
+2026-08-05 05:30:22 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:30:22 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:30:22 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_search_users0/test_alt.db
+2026-08-05 05:30:23 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:30:23 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:30:23 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_promote_and_demote0/test_alt.db
+2026-08-05 05:30:23 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:30:23 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:30:23 | INFO     | alt.services.admin_service | User 1 role changed to admin by admin action
+2026-08-05 05:30:23 | INFO     | alt.services.admin_service | User 1 role changed to user by admin action
+2026-08-05 05:30:24 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_invalid_role_rejected0/test_alt.db
+2026-08-05 05:30:24 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:30:24 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:30:24 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_disable_enable_user0/test_alt.db
+2026-08-05 05:30:24 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:30:25 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:30:25 | INFO     | alt.services.admin_service | User 2 set is_active=False by admin action
+2026-08-05 05:30:25 | INFO     | alt.services.admin_service | User 2 set is_active=True by admin action
+2026-08-05 05:30:25 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_nonexistent_user_rejected0/test_alt.db
+2026-08-05 05:30:25 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/admin_service.py", line 54, in set_user_active
+    raise ValidationError(f"User {target_user_id} not found", user_message="User not found.")
+utils.exceptions.ValidationError: User 999999 not found
+2026-08-05 05:30:25 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_delete_user0/test_alt.db
+2026-08-05 05:30:25 | INFO     | alt.auth.service | New user registered: alice@example.com
+2026-08-05 05:30:25 | INFO     | alt.auth.service | New user registered: bob@example.com
+2026-08-05 05:30:25 | WARNING  | alt.services.admin_service | User 2 deleted by admin action
+2026-08-05 05:30:26 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_register_and_login0/test_alt.db
+2026-08-05 05:30:26 | INFO     | alt.auth.service | New user registered: test@example.com
+2026-08-05 05:30:26 | INFO     | alt.auth.service | User logged in: test@example.com
+2026-08-05 05:30:26 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_duplicate_email_rejected0/test_alt.db
+2026-08-05 05:30:26 | INFO     | alt.auth.service | New user registered: dup@example.com
+2026-08-05 05:30:26 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 85, in register_user
+    raise ValidationError(
+utils.exceptions.ValidationError: Email already registered: dup@example.com
+2026-08-05 05:30:26 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_weak_password_rejected0/test_alt.db
+2026-08-05 05:30:27 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_password_mismatch_rejecte0/test_alt.db
+2026-08-05 05:30:27 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_wrong_password_rejected0/test_alt.db
+2026-08-05 05:30:27 | INFO     | alt.auth.service | New user registered: wrongpw@example.com
+2026-08-05 05:30:27 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_account_lockout_after_rep0/test_alt.db
+2026-08-05 05:30:28 | INFO     | alt.auth.service | New user registered: lockout@example.com
+2026-08-05 05:30:29 | WARNING  | alt.auth.service | Account locked after repeated failures: lockout@example.com
+2026-08-05 05:30:29 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_change_password_flow0/test_alt.db
+2026-08-05 05:30:29 | INFO     | alt.auth.service | New user registered: changer@example.com
+2026-08-05 05:30:30 | INFO     | alt.auth.service | Password changed for user id=1
+2026-08-05 05:30:31 | INFO     | alt.auth.service | User logged in: changer@example.com
+2026-08-05 05:30:31 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_password_reset_flow0/test_alt.db
+2026-08-05 05:30:31 | INFO     | alt.auth.service | New user registered: resetter@example.com
+2026-08-05 05:30:31 | INFO     | alt.auth.service | Password reset token issued for: resetter@example.com
+2026-08-05 05:30:31 | INFO     | alt.auth.service | Password reset completed for user id=1
+2026-08-05 05:30:31 | INFO     | alt.auth.service | User logged in: resetter@example.com
+2026-08-05 05:30:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_password_reset_unknown_em0/test_alt.db
+2026-08-05 05:30:32 | INFO     | alt.auth.service | Password reset requested for unknown email: nobody@example.com
+2026-08-05 05:30:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_reset_with_invalid_token_0/test_alt.db
+2026-08-05 05:30:32 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/auth/service.py", line 260, in reset_password
+    raise ValidationError(
+utils.exceptions.ValidationError: Invalid or expired reset token.
+2026-08-05 05:30:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_list_and_count0/test_alt.db
+2026-08-05 05:30:32 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_favorites_filter0/test_alt.db
+2026-08-05 05:30:32 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:32 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_search0/test_alt.db
+2026-08-05 05:30:32 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_toggle_favorite_cross_use0/test_alt.db
+2026-08-05 05:30:33 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:33 | ERROR    | alt.database.base | Database session rolled back due to an error
+Traceback (most recent call last):
+  File "/home/claude/ALT/database/base.py", line 72, in get_session
+    yield session
+  File "/home/claude/ALT/services/history_service.py", line 83, in toggle_favorite
+    raise ValidationError(
+utils.exceptions.ValidationError: Record 2 not found for user 999999
+2026-08-05 05:30:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_delete_and_clear0/test_alt.db
+2026-08-05 05:30:33 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:33 | INFO     | alt.services.history_service | Deleted history record_id=2 for user_id=1
+2026-08-05 05:30:33 | INFO     | alt.services.history_service | Cleared all history for user_id=1 (1 records)
+2026-08-05 05:30:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_statistics0/test_alt.db
+2026-08-05 05:30:33 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:33 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_exports_produce_nonempty_0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.auth.service | New user registered: hist@example.com
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_registry_has_50_plus_lang0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_mandatory_nigerian_langua0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_get_language_unknown_code0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_is_supported0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_to_nllb_code0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_language_choices_sorted_a0/test_alt.db
+2026-08-05 05:30:34 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_password_hash_roundtrip0/test_alt.db
+2026-08-05 05:30:35 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_password_hash_is_salted_d0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_password_strength_rules0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_email_normalization_and_v0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_sanitize_text_input_strip0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_file_validation_rejects_b0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_file_validation_rejects_o0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_file_validation_rejects_e0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_sanitize_filename_strips_0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_rate_limiter_blocks_after0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_rate_limiter_keys_are_ind0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_empty_text_rejected0/test_alt.db
+2026-08-05 05:30:36 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:30:36 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_unsupported_language_reje0/test_alt.db
+2026-08-05 05:30:37 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:30:37 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_identical_languages_rejec0/test_alt.db
+2026-08-05 05:30:37 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:30:37 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_successful_translation_sa0/test_alt.db
+2026-08-05 05:30:37 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:30:37 | INFO     | alt.services.translation_service | Translation completed: en->yo in 0.000s via nllb-200
+2026-08-05 05:30:37 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_fallback_used_when_primar0/test_alt.db
+2026-08-05 05:30:38 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:30:38 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:30:38 | INFO     | alt.services.translation_service | Translation completed: en->ha in 0.000s via marian-mt
+2026-08-05 05:30:38 | INFO     | alt.database.base | Database initialized at sqlite:////tmp/pytest-of-root/pytest-4/test_both_models_failing_raise0/test_alt.db
+2026-08-05 05:30:38 | INFO     | alt.auth.service | New user registered: translator@example.com
+2026-08-05 05:30:38 | WARNING  | alt.services.translation_service | Primary model failed (en -> ha), attempting fallback: boom
+2026-08-05 05:30:38 | ERROR    | alt.services.translation_service | Fallback model also failed (en -> ha): also boom

@@ -1,0 +1,148 @@
+2026-07-21T11:46:29.221145223Z [inf]  Starting Container
+2026-07-21T11:46:29.617127760Z [inf]  2026-07-21 11:46:29,557 INFO spawned: 'nginx' with pid 12
+2026-07-21T11:46:29.617131580Z [inf]  2026-07-21 11:46:29,557 INFO spawned: 'nginx' with pid 12
+2026-07-21T11:46:29.617135020Z [inf]  2026-07-21 11:46:29,558 INFO spawned: 'php-fpm' with pid 13
+2026-07-21T11:46:29.617138399Z [inf]  2026-07-21 11:46:29,558 INFO spawned: 'php-fpm' with pid 13
+2026-07-21T11:46:29.617141709Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:29.617145089Z [inf]  2026-07-21 11:46:29,562 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:29.617148919Z [inf]  2026-07-21 11:46:29,562 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:29.617151979Z [inf]  <br />
+2026-07-21T11:46:29.617155709Z [inf]  <b>Warning</b>:  PHP Startup: Unable to load dynamic library 'gd' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd.so (Error loading shared library libpng16.so.16: No such file or directory (needed by /usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd.so))) in <b>Unknown</b> on line <b>0</b><br />
+2026-07-21T11:46:29.617158719Z [inf]  <br />
+2026-07-21T11:46:29.617162159Z [inf]  <b>Warning</b>:  PHP Startup: Unable to load dynamic library 'intl' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl.so (Error loading shared library libicuio.so.78: No such file or directory (needed by /usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl.so))) in <b>Unknown</b> on line <b>0</b><br />
+2026-07-21T11:46:29.617165209Z [inf]  <br />
+2026-07-21T11:46:29.617169189Z [inf]  <b>Warning</b>:  PHP Startup: Unable to load dynamic library 'pdo_pgsql' (tried: /usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql (Error loading shared library /usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql: No such file or directory), /usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql.so (Error loading shared library libpq.so.5: No such file or directory (needed by /usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql.so))) in <b>Unknown</b> on line <b>0</b><br />
+2026-07-21T11:46:29.617482446Z [err]  [21-Jul-2026 11:46:29] NOTICE: fpm is running, pid 13
+2026-07-21T11:46:29.617488466Z [err]  [21-Jul-2026 11:46:29] NOTICE: ready to handle connections
+2026-07-21T11:46:30.700729082Z [inf]  2026-07-21 11:46:30,585 INFO spawned: 'nginx' with pid 16
+2026-07-21T11:46:30.700735282Z [inf]  2026-07-21 11:46:30,585 INFO spawned: 'nginx' with pid 16
+2026-07-21T11:46:30.700738992Z [inf]  2026-07-21 11:46:30,585 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:30.700742612Z [inf]  2026-07-21 11:46:30,585 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:30.700746232Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:31.687240464Z [inf]  2026-07-21 11:46:31,589 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:31.687242784Z [inf]  2026-07-21 11:46:31,589 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:31.687245204Z [inf]  2026-07-21 11:46:31,589 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:31.687248154Z [inf]  2026-07-21 11:46:31,589 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:32.697954519Z [inf]  2026-07-21 11:46:32,592 INFO spawned: 'nginx' with pid 17
+2026-07-21T11:46:32.697958309Z [inf]  2026-07-21 11:46:32,592 INFO spawned: 'nginx' with pid 17
+2026-07-21T11:46:32.697961889Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:32.697965549Z [inf]  2026-07-21 11:46:32,596 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:32.697969339Z [inf]  2026-07-21 11:46:32,596 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:33.811479757Z [inf]  2026-07-21 11:46:33,602 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:33.811527797Z [inf]  2026-07-21 11:46:33,598 INFO spawned: 'nginx' with pid 18
+2026-07-21T11:46:33.811531297Z [inf]  2026-07-21 11:46:33,598 INFO spawned: 'nginx' with pid 18
+2026-07-21T11:46:33.811535927Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:33.811539637Z [inf]  2026-07-21 11:46:33,602 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:34.936747610Z [inf]  2026-07-21 11:46:33,504 WARN received SIGQUIT indicating exit request
+2026-07-21T11:46:34.936756420Z [inf]  2026-07-21 11:46:33,504 WARN received SIGQUIT indicating exit request
+2026-07-21T11:46:34.936761310Z [inf]  2026-07-21 11:46:33,505 INFO waiting for php-fpm to die
+2026-07-21T11:46:34.936765760Z [inf]  2026-07-21 11:46:33,505 INFO waiting for php-fpm to die
+2026-07-21T11:46:34.936769870Z [err]  [21-Jul-2026 11:46:33] NOTICE: Terminating ...
+2026-07-21T11:46:34.936774050Z [err]  [21-Jul-2026 11:46:33] NOTICE: exiting, bye-bye!
+2026-07-21T11:46:34.936778550Z [inf]  2026-07-21 11:46:33,509 INFO stopped: php-fpm (exit status 0)
+2026-07-21T11:46:34.936785240Z [inf]  2026-07-21 11:46:33,509 INFO stopped: php-fpm (exit status 0)
+2026-07-21T11:46:34.999385423Z [inf]  Stopping Container
+2026-07-21T11:46:35.831973220Z [inf]  2026-07-21 11:46:35,604 INFO spawned: 'nginx' with pid 19
+2026-07-21T11:46:35.831976890Z [inf]  2026-07-21 11:46:35,604 INFO spawned: 'nginx' with pid 19
+2026-07-21T11:46:35.831980810Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:36.618492887Z [inf]  2026-07-21 11:46:36,609 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:36.618496937Z [inf]  2026-07-21 11:46:36,609 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:36.618499767Z [inf]  2026-07-21 11:46:36,610 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:36.618502037Z [inf]  2026-07-21 11:46:36,610 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:37.624530383Z [inf]  2026-07-21 11:46:37,612 INFO spawned: 'nginx' with pid 20
+2026-07-21T11:46:37.624539783Z [inf]  2026-07-21 11:46:37,612 INFO spawned: 'nginx' with pid 20
+2026-07-21T11:46:37.624544693Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:38.822971262Z [inf]  2026-07-21 11:46:38,618 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:38.822974821Z [inf]  2026-07-21 11:46:38,618 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:38.822978641Z [inf]  2026-07-21 11:46:38,618 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:38.822982421Z [inf]  2026-07-21 11:46:38,618 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:39.624511353Z [inf]  2026-07-21 11:46:39,619 INFO spawned: 'nginx' with pid 21
+2026-07-21T11:46:39.624518004Z [inf]  2026-07-21 11:46:39,619 INFO spawned: 'nginx' with pid 21
+2026-07-21T11:46:39.624522804Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:40.632170380Z [inf]  2026-07-21 11:46:40,625 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:40.632172880Z [inf]  2026-07-21 11:46:40,625 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:40.632175460Z [inf]  2026-07-21 11:46:40,625 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:40.632177530Z [inf]  2026-07-21 11:46:40,625 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:41.652916199Z [inf]  2026-07-21 11:46:41,627 INFO spawned: 'nginx' with pid 22
+2026-07-21T11:46:41.652921419Z [inf]  2026-07-21 11:46:41,627 INFO spawned: 'nginx' with pid 22
+2026-07-21T11:46:41.652925719Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:42.912993489Z [inf]  2026-07-21 11:46:42,632 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:42.913004829Z [inf]  2026-07-21 11:46:42,632 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:42.913012588Z [inf]  2026-07-21 11:46:42,632 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:42.913019008Z [inf]  2026-07-21 11:46:42,632 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:43.650356378Z [inf]  2026-07-21 11:46:43,635 INFO spawned: 'nginx' with pid 23
+2026-07-21T11:46:43.650363008Z [inf]  2026-07-21 11:46:43,635 INFO spawned: 'nginx' with pid 23
+2026-07-21T11:46:43.650366718Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:44.655986579Z [inf]  2026-07-21 11:46:44,640 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:44.655989608Z [inf]  2026-07-21 11:46:44,640 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:44.655992498Z [inf]  2026-07-21 11:46:44,640 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:44.655996298Z [inf]  2026-07-21 11:46:44,640 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:45.694316469Z [inf]  2026-07-21 11:46:45,642 INFO spawned: 'nginx' with pid 24
+2026-07-21T11:46:45.694323350Z [inf]  2026-07-21 11:46:45,642 INFO spawned: 'nginx' with pid 24
+2026-07-21T11:46:45.694327530Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:46.664661181Z [inf]  2026-07-21 11:46:46,646 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:46.664665411Z [inf]  2026-07-21 11:46:46,646 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:46.664668240Z [inf]  2026-07-21 11:46:46,646 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:46.664671190Z [inf]  2026-07-21 11:46:46,646 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:47.701358978Z [inf]  2026-07-21 11:46:47,648 INFO spawned: 'nginx' with pid 25
+2026-07-21T11:46:47.701363948Z [inf]  2026-07-21 11:46:47,648 INFO spawned: 'nginx' with pid 25
+2026-07-21T11:46:47.701368718Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:48.714528124Z [inf]  2026-07-21 11:46:48,653 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:48.714534244Z [inf]  2026-07-21 11:46:48,653 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:48.714539414Z [inf]  2026-07-21 11:46:48,654 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:48.714542944Z [inf]  2026-07-21 11:46:48,654 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:49.661703928Z [inf]  2026-07-21 11:46:49,656 INFO spawned: 'nginx' with pid 26
+2026-07-21T11:46:49.661709318Z [inf]  2026-07-21 11:46:49,656 INFO spawned: 'nginx' with pid 26
+2026-07-21T11:46:49.661713028Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:50.668190117Z [inf]  2026-07-21 11:46:50,661 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:50.668196387Z [inf]  2026-07-21 11:46:50,661 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:50.668200407Z [inf]  2026-07-21 11:46:50,662 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:50.668205267Z [inf]  2026-07-21 11:46:50,662 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:51.666359765Z [inf]  2026-07-21 11:46:51,664 INFO spawned: 'nginx' with pid 27
+2026-07-21T11:46:51.666364715Z [inf]  2026-07-21 11:46:51,664 INFO spawned: 'nginx' with pid 27
+2026-07-21T11:46:51.671254519Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:51.671264739Z [inf]  2026-07-21 11:46:51,668 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:51.671268289Z [inf]  2026-07-21 11:46:51,668 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:52.676965799Z [inf]  2026-07-21 11:46:52,670 INFO spawned: 'nginx' with pid 28
+2026-07-21T11:46:52.676971269Z [inf]  2026-07-21 11:46:52,670 INFO spawned: 'nginx' with pid 28
+2026-07-21T11:46:52.676974339Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:53.677645843Z [inf]  2026-07-21 11:46:53,676 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:53.677651783Z [inf]  2026-07-21 11:46:53,676 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:53.677656003Z [inf]  2026-07-21 11:46:53,676 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:53.677660513Z [inf]  2026-07-21 11:46:53,676 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:54.685924719Z [inf]  2026-07-21 11:46:54,678 INFO spawned: 'nginx' with pid 29
+2026-07-21T11:46:54.685929549Z [inf]  2026-07-21 11:46:54,678 INFO spawned: 'nginx' with pid 29
+2026-07-21T11:46:54.685932649Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:55.691541083Z [inf]  2026-07-21 11:46:55,684 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:55.691545963Z [inf]  2026-07-21 11:46:55,684 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:55.691549023Z [inf]  2026-07-21 11:46:55,684 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:55.691551603Z [inf]  2026-07-21 11:46:55,684 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:56.689371511Z [inf]  2026-07-21 11:46:56,686 INFO spawned: 'nginx' with pid 30
+2026-07-21T11:46:56.689374351Z [inf]  2026-07-21 11:46:56,686 INFO spawned: 'nginx' with pid 30
+2026-07-21T11:46:56.694119476Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:57.698390514Z [inf]  2026-07-21 11:46:57,692 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:57.698393664Z [inf]  2026-07-21 11:46:57,692 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-07-21T11:46:57.698396994Z [inf]  2026-07-21 11:46:57,692 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:57.698399764Z [inf]  2026-07-21 11:46:57,692 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:58.703117756Z [inf]  2026-07-21 11:46:58,695 INFO spawned: 'nginx' with pid 31
+2026-07-21T11:46:58.703123366Z [inf]  2026-07-21 11:46:58,695 INFO spawned: 'nginx' with pid 31
+2026-07-21T11:46:58.703126486Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:58.703129476Z [inf]  2026-07-21 11:46:58,699 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:58.703132106Z [inf]  2026-07-21 11:46:58,699 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:59.708827369Z [inf]  2026-07-21 11:46:59,702 INFO spawned: 'nginx' with pid 32
+2026-07-21T11:46:59.708832439Z [inf]  2026-07-21 11:46:59,702 INFO spawned: 'nginx' with pid 32
+2026-07-21T11:46:59.708835349Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:46:59.708840209Z [inf]  2026-07-21 11:46:59,707 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:46:59.708843169Z [inf]  2026-07-21 11:46:59,707 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:47:01.711463831Z [inf]  2026-07-21 11:47:01,710 INFO spawned: 'nginx' with pid 33
+2026-07-21T11:47:01.711466771Z [inf]  2026-07-21 11:47:01,710 INFO spawned: 'nginx' with pid 33
+2026-07-21T11:47:01.716205057Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:47:01.716208257Z [inf]  2026-07-21 11:47:01,715 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:47:01.716211197Z [inf]  2026-07-21 11:47:01,715 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:47:04.723976534Z [inf]  2026-07-21 11:47:04,719 INFO spawned: 'nginx' with pid 34
+2026-07-21T11:47:04.723980974Z [inf]  2026-07-21 11:47:04,719 INFO spawned: 'nginx' with pid 34
+2026-07-21T11:47:04.724917947Z [err]  nginx: [emerg] "server" directive is not allowed here in /etc/nginx/conf.d/default.conf:1
+2026-07-21T11:47:04.724929007Z [inf]  2026-07-21 11:47:04,724 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:47:04.724936577Z [inf]  2026-07-21 11:47:04,724 WARN exited: nginx (exit status 1; not expected)
+2026-07-21T11:47:05.730947492Z [inf]  2026-07-21 11:47:05,725 INFO gave up: nginx entered FATAL state, too many start retries too quickly
+2026-07-21T11:47:05.730957442Z [inf]  2026-07-21 11:47:05,725 INFO gave up: nginx entered FATAL state, too many start retries too quickly
